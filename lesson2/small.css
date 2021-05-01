@@ -1,0 +1,45 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", Georgia, serif;
+  text-align: center;
+  margin-top: 1em;
+}
+
+h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 0.5em;
+  }
+
+body {
+    background-color: #aeb7b3;
+    font-family: "Noto Sans JP", Helvetica, sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+  
+.container {
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0.5em;
+    max-width: 960px;
+}
+  
+.item {
+    text-align: center;
+    border-style: outset;
+    padding: 0.25em;
+}
+  
+.item img{
+    border-style: inset;
+    max-width: 90%;
+    height: 500px;
+  } 
