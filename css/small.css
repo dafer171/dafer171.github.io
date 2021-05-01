@@ -1,0 +1,40 @@
+body {
+  background-color: #aeb7b3;
+  font-family: "Monserrat", Helvetica, sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 150px;
+  box-shadow: 0 0 30px #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", Georgia, serif;
+  text-align: center;
+  margin-top: 1em;
+}
+
+h1 {
+  border-radius: 10px 10px 10px 10px;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+footer,
+header {
+  text-align: center;
+  background-color: #efcb68;
+  border: 1px solid;
+}
