@@ -18,6 +18,10 @@ body {
   max-width: 960px;
 }
 
+main {
+  background-color: #efcb68;
+}
+
 nav {
   background-color: #e1efe6;
   line-height: 3em;
@@ -26,24 +30,32 @@ nav {
 
 nav ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-nav a {
-  font-size: 1.5em;
+nav ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 nav a:link {
   color: blue;
 }
 
-nav a:hover {
+nav ul li a:hover {
   color: #efcb68;
-  background-color: black;
+  background-color: #006992;
 }
 
 a:visited {
   color: gray;
+}
+
+img {
+  border-style: inset;
+  max-width: 90%;
+  height: 500px;
 }

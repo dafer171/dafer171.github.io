@@ -11,7 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
     <header>
@@ -31,6 +33,7 @@
       <p>Color Palette</p>
     </h3>
     <p>
+      <img src="images/Color palete.png" alt="Color Palette" />
       Palette URL:
       <a
         href="https://coolors.co/aeb7b3-e1efe6-efcb68-ff729f-006992"
@@ -39,20 +42,13 @@
       >
     </p>
 
-    <table class="colors">
-      <tr>
-        <th>Primary</th>
-        <th>Secondary</th>
-        <th>Accent 1</th>
-        <th>Accent 2</th>
-      </tr>
-
-      <tr>
-        <td class="primary">[#aeb7b3]</td>
-        <td class="secondary">[#e1efe6]</td>
-        <td class="accent1">[#efcb68]</td>
-        <td class="accent2"></td>
-      </tr>
-    </table>
+    <footer>
+      &copy; <span id="currentYear"></span> | David F. Peña | Ecuador |
+      <a href="https://www.byui.edu/online" target="_blank"
+        >BYUI Online Learning</a
+      >
+      <p>Last modified: <span id="LastUpdated"></span></p>
+    </footer>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
