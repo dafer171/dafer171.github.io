@@ -20,6 +20,8 @@ body {
 
 main {
   background-color: #efcb68;
+  padding: 5px 25px;
+  margin: 0 auto;
 }
 
 nav {
