@@ -18,6 +18,15 @@ body {
   max-width: 960px;
 }
 
+header img {
+  height: 80px;
+  float: left;
+}
+
+header h2 {
+  text-align: left;
+}
+
 main {
   background-color: #efcb68;
   padding: 5px 25px;
@@ -32,6 +41,7 @@ nav {
 
 .navi {
   list-style: none;
+  padding: 0;
 }
 
 .navi li:first-child {
