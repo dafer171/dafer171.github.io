@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 32.5em) {
   .navi {
     display: flex;
   }
@@ -13,13 +13,5 @@
 
   .ham {
     display: none;
-  }
-
-  main {
-    max-width: 760px;
-  }
-
-  footer {
-    max-width: 760px;
   }
 }

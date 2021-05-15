@@ -23,7 +23,7 @@ header img {
   float: left;
 }
 
-header h2 {
+header h1 {
   text-align: left;
 }
 
@@ -33,19 +33,25 @@ main {
   margin: 0 auto;
 }
 
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+}
+
 nav {
   background-color: #e1efe6;
   line-height: 3em;
-  text-align: center;
 }
 
 .navi {
-  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.navi li:first-child {
-  display: block;
+.navi ul {
+  list-style: none;
 }
 
 .navi li {
@@ -56,15 +62,20 @@ nav {
   display: block;
   text-align: center;
   text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 nav a:link {
   color: blue;
 }
 
-.navi a:hover {
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
   color: #efcb68;
-  background-color: #006992;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .navi a:visited {
@@ -79,4 +90,15 @@ img {
   border-style: inset;
   max-width: 90%;
   height: 500px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #e1efe6;
 }
