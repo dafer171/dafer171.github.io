@@ -89,8 +89,34 @@ nav a:hover {
 
 img {
   border-style: inset;
-  max-width: 90%;
-  height: 500px;
+}
+
+#heroContainer{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin: 10px auto;
+}
+
+#hero {
+  max-width: 100%;
+}
+
+#weatherContainer {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  position: absolute;
+	top: 50px;
+	left: 50px;
+}
+
+#forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  border: 1px solid rgba(0, 0, 0, 0.3); 
+  text-align: center;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
