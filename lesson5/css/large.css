@@ -1,0 +1,41 @@
+@media only screen and (min-width: 60em) {
+  .navi {
+    display: flex;
+  }
+  .navi li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navi a {
+    text-align: center;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  main {
+    max-width: 760px;
+  }
+
+  #heroContainer {
+    position: relative;
+  }
+
+  #weatherContainer {
+    position: absolute;
+  }
+
+  .weatherdetails {
+    color: white;
+  }
+
+  .label {
+    text-align: left;
+  }
+
+  footer {
+    max-width: 760px;
+  }
+}

@@ -1,0 +1,35 @@
+@media only screen and (min-width: 32.5em) {
+  .navi {
+    display: flex;
+  }
+  .navi li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navi a {
+    text-align: center;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .label {
+    text-align: right;
+  }
+
+  #forecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #artImag {
+    max-width: 300px;
+    float: right;
+  }
+
+  .article {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
+  }
+}
