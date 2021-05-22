@@ -32,4 +32,24 @@
     border: 5px solid rgba(0, 0, 0, 0.3);
     margin: 10px auto;
   }
+
+  #mapImg {
+    float: left;
+    max-width: 98%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .itemContact {
+    grid-column: 2;
+  }
+
+  .social {
+    display: inline;
+  }
 }

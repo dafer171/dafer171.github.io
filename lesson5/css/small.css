@@ -110,6 +110,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 10px auto;
 }
 
 .item {
@@ -127,13 +128,21 @@ img {
   max-width: 100%;
 }
 
+footer {
+  background-color: #e1efe6;
+}
+
+#mapImg {
+  max-width: 98%;
+}
+
+.social {
+  display: none;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
-}
-
-footer {
-  background-color: #e1efe6;
 }
