@@ -89,15 +89,12 @@ nav a:hover {
 
 img {
   border-style: inset;
+  max-width: 100%;
 }
 
 #heroContainer {
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 10px auto;
-}
-
-#heroImg {
-  max-width: 100%;
 }
 
 #weatherContainer {
@@ -122,10 +119,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   line-height: 0.1em;
-}
-
-#artImag {
-  max-width: 100%;
 }
 
 footer {
