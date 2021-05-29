@@ -1,0 +1,55 @@
+@media only screen and (min-width: 32.5em) {
+  .navi {
+    display: flex;
+  }
+  .navi li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navi a {
+    text-align: center;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .label {
+    text-align: right;
+  }
+
+  #forecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #artImag {
+    max-width: 300px;
+    float: right;
+  }
+
+  .article {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
+  }
+
+  #mapImg {
+    float: left;
+    max-width: 98%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .itemContact {
+    grid-column: 2;
+  }
+
+  .social {
+    display: inline;
+  }
+}
