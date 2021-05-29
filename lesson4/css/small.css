@@ -119,6 +119,10 @@ img {
   text-align: center;
 }
 
+footer {
+  background-color: #e1efe6;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
@@ -126,6 +130,4 @@ img {
   clear: both;
 }
 
-footer {
-  background-color: #e1efe6;
-}
+

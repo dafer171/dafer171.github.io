@@ -38,3 +38,9 @@ header {
   background-color: #efcb68;
   border: 1px solid;
 }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
