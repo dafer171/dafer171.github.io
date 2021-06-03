@@ -1,0 +1,8 @@
+img {
+  filter: blur(0em);
+  transition: filter 1s;
+  display: block;
+  margin: 5px;
+  border: 1px solid;
+  max-width: 98%;
+}

@@ -5,9 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lazy Load</title>
+    <link rel="stylesheet" href="css/lazyload.css" />
   </head>
+
   <body>
     <h1>Galery</h1>
-    <img src="" alt="" />
+
+    <picture>
+      <img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/beautiful-landscape-shot-of-mountains-and-hills-under-pinkish-sky.jpg"
+        alt="Beautiful landscape shot of mountains and hills under pinkish sky"
+      />
+    </picture>
+
+    <picture
+      ><img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/beautiful-shot-of-mountains-with-clear-sky-in-the-background.jpg"
+        alt="Beautiful shot of mountains with clear sky in the background"
+      />
+    </picture>
+
+    <picture
+      ><img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/beautiful-strawberry-garden-and-sunrise-on-doi-ang-khang-chiang-mai-thailand.jpg"
+        alt=""
+      />
+    </picture>
+
+    <picture>
+      <img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/field-with-grass-and-clouds.jpg"
+        alt=""
+      />
+    </picture>
+
+    <picture>
+      <img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/morning-fog-creeps-with-scraps-over-autumn-mountain-forest-covered-in-gold-leaves.jpg"
+        alt=""
+      />
+    </picture>
+    <script src="js/lazyload.js"></script>
   </body>
 </html>
