@@ -86,6 +86,11 @@ nav a:hover {
 .responsive li {
   display: block;
 }
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
 img {
   filter: blur(0em);
   transition: filter 1s;
