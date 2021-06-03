@@ -1,30 +1,41 @@
-//get all imgs with data-src attribute
-const images = document.querySelectorAll('[data-src]');
+const hambutton = document.querySelector(".ham");
+const mainnav = document.querySelector(".navi");
+hambutton.addEventListener(
+  "click",
+  () => {
+    mainnav.classList.toggle("responsive");
+  },
+  false
+);
+window.onresize = () => {
+  if (window.innerWidth > 760) mainnav.classList.remove("responsive");
+};
+
+const images = document.querySelectorAll("[data-src]");
 
 function preloadImage(img) {
   const src = img.getAttribute("data-src");
-  if(!src) {
+  if (!src) {
     return;
   }
   img.src = src;
 }
 
 const imgOptions = {};
-const imgObserver = new IntersectionObserver((entries, imgObserver) => { entries.forEach(entry => {
-  if(!entry.isIntersecting){
-    return;
-  }else {
-    preloadImage(entry.target);
-    imgObserver.unobserve(entry.target);
-  }
-})
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      preloadImage(entry.target);
+      imgObserver.unobserve(entry.target);
+    }
+  });
+}, imgOptions);
 
-}, imgOptions)
-
-images.forEach(image => {
-  imgObserver.observe(image); 
+images.forEach((image) => {
+  imgObserver.observe(image);
 });
-
 
 /*
 // optional parameters being set for theIntersectional observer

@@ -1,3 +1,91 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", Georgia, serif;
+  text-align: center;
+  margin-top: 1em;
+}
+
+body {
+  background-color: #aeb7b3;
+  font-family: "Noto Sans JP", Helvetica, sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+header img {
+  height: 80px;
+  float: left;
+}
+
+header h1 {
+  text-align: left;
+}
+
+main {
+  background-color: #efcb68;
+  padding: 5px 25px;
+  margin: 0 auto;
+}
+
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+}
+
+nav {
+  background-color: #e1efe6;
+  line-height: 3em;
+}
+
+.navi {
+  padding: 0;
+  margin: 0;
+}
+
+.navi ul {
+  list-style: none;
+}
+
+.navi li {
+  display: none;
+}
+
+.navi a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav a:link {
+  color: blue;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #efcb68;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.navi a:visited {
+  color: gray;
+}
+
+.responsive li {
+  display: block;
+}
 img {
   filter: blur(0em);
   transition: filter 1s;
@@ -5,4 +93,104 @@ img {
   margin: 5px;
   border: 1px solid;
   max-width: 98%;
+}
+
+@media only screen and (min-width: 32.5em) {
+  .navi {
+    display: flex;
+  }
+  .navi li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navi a {
+    text-align: center;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .label {
+    text-align: right;
+  }
+
+  #forecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #artImag {
+    max-width: 300px;
+    float: right;
+  }
+
+  .article {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
+  }
+
+  #mapImg {
+    float: left;
+    max-width: 98%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .itemContact {
+    grid-column: 2;
+  }
+
+  .social {
+    display: inline;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .navi {
+    display: flex;
+  }
+  .navi li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navi a {
+    text-align: center;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  main {
+    max-width: 760px;
+  }
+
+  #heroContainer {
+    position: relative;
+  }
+
+  #weatherContainer {
+    position: absolute;
+  }
+
+  .weatherdetails {
+    color: white;
+  }
+
+  .label {
+    text-align: left;
+  }
 }
