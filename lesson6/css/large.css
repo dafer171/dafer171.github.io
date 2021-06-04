@@ -34,4 +34,9 @@
   .label {
     text-align: left;
   }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
