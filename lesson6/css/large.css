@@ -39,4 +39,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .shadow:hover {
+    box-shadow: 0 0 50px #333;
+  }
 }

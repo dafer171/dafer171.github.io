@@ -1,6 +1,6 @@
 localStorage.mytime = Date.now();
-const visit = localStorage.getItem("mytime");
-//const lastVisit = localStorage.setItem("mytime");
+const lastVisit = localStorage.getItem("mytime");
+//localStorage.setItem("mytime", value);
 
 //const newVisit = localStorage.getItem("mytime");
 

@@ -145,10 +145,6 @@ footer {
   border-style: none;
 }
 
-.shadow:hover {
-  box-shadow: 0 0 50px #333;
-}
-
 figcaption {
   text-align: center;
   width: 100%;
