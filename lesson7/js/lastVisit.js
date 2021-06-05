@@ -1,6 +1,9 @@
 localStorage.mytime = Date.now();
 const visit = localStorage.getItem("mytime");
+//const lastVisit = localStorage.setItem("mytime");
 
-let timeSinceLastVisit = visit - visit;
+//const newVisit = localStorage.getItem("mytime");
 
-document.getElementById("lastVisit").innerHTML = timeSinceLastVisit;
+//let timeSinceLastVisit = visit - newVisit;
+
+document.getElementById("lastVisit").innerHTML = visit; //timeSinceLastVisit;
