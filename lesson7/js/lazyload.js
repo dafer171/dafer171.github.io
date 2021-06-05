@@ -1,4 +1,4 @@
-const hambutton = document.querySelector(".ham");
+/*const hambutton = document.querySelector(".ham");
 const mainnav = document.querySelector(".navi");
 hambutton.addEventListener(
   "click",
@@ -10,6 +10,7 @@ hambutton.addEventListener(
 window.onresize = () => {
   if (window.innerWidth > 760) mainnav.classList.remove("responsive");
 };
+*/
 
 const images = document.querySelectorAll("[data-src]");
 
@@ -22,7 +23,11 @@ function preloadImage(img) {
   img.removeAttribute("data-src");
 }
 
-const imgOptions = {};
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 50px 0px",
+};
+
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
