@@ -6,13 +6,16 @@ table {
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
   font-size: 0.8rem;
+  box-shadow: 10px 10px 5px gray;
+  margin: 4em;
+  padding:1em;
   /*width: 100%;*/
 }
 
 td,
 th {
   border: 1px solid rgb(190, 190, 190);
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 thead th {
@@ -47,4 +50,8 @@ tr:hover td {
 }
 
 @media only screen and (min-width: 32.5em) {
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 }
