@@ -5,7 +5,6 @@ html {
 table {
   border-collapse: collapse;
   border: 2px solid rgb(200, 200, 200);
-  font-size: 0.8rem;
   box-shadow: 10px 10px 5px gray;
   margin: 4em;
   padding:1em;
@@ -44,14 +43,50 @@ tfoot tr td {
   background-color: #7fb9c2;
 }
 
-tr:hover td {
+td:hover {
   background-color: #628ca6;
   color: white;
 }
-
-@media only screen and (min-width: 32.5em) {
 .center {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  table {
+    background-color: white;
+    border-collapse: separate;
+  }
+
+  table thead {
+    overflow: auto;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: center;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
 }
