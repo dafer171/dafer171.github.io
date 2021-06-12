@@ -14,10 +14,14 @@
     <link rel="stylesheet" href="/lesson6/css/small.css" />
     <link rel="stylesheet" href="/lesson6/css/medium.css" />
     <link rel="stylesheet" href="/lesson6/css/large.css" />
+    <link rel="stylesheet" href="css/storm.css" />
   </head>
   <body>
     <header class="clearfix">
-      <img src="/lesson7/images/iconfinder_icon-59_667368.png" alt="website logo" />
+      <img
+        src="/lesson7/images/iconfinder_icon-59_667368.png"
+        alt="website logo"
+      />
       <h1>Weather and news on your device</h1>
       <p>Just the information you need</p>
 
@@ -36,8 +40,91 @@
 
     <main class="clearfix">
       <h1>Strom Center</h1>
+      <form method="GET" action="thanks.html">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label class="top"
+            >Full name*<input type="text" name="fname" required
+          /></label>
+          <label class="top">
+            Email<input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+          /></label>
+          <label class="top">
+            Phone*<input type="tel" name="phone" required
+          /></label>
+          <label class="top">
+            Zip code<input type="number" name="zip" required
+          /></label>
+        </fieldset>
 
-      
+        <fieldset>
+          <legend>Storm Information</legend>
+          <label class="top">
+            Storm Date<input type="date" name="Sdate"
+          /></label>
+
+          <label class="top">
+            Storm Type<input list="stormType" name="Stype"
+          /></label>
+          <datalist id="stormType">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+
+          <label class="top">
+            Storm Severity<input list="severity" name="SSeverity"
+          /></label>
+          <datalist id="severity">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+
+          <label class="top"
+            >Storm Region
+            <select name="subject">
+              <option value="">Select Region</option>
+              <option value="fishHaven">Fish Haven</option>
+              <option value="preston">Preston</option>
+              <option value="sodaSprings">Soda Springs</option>
+            </select>
+          </label>
+
+          <div>User in-danger level</div>
+          <label class="sbs"
+            ><input type="radio" name="danger" value="yes" />Yes</label
+          >
+          <label class="sbs"
+            ><input type="radio" name="danger" value="maybe" />Maybe</label
+          >
+          <label class="sbs"
+            ><input type="radio" name="danger" value="no" />No</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Aditional Information</legend>
+          <label class="top"
+            >Information<input type="textarea" name="information"
+          /></label>
+        </fieldset>
+
+        <input type="submit" value="Report Storm" class="submitBtn" />
+      </form>
+
       <p>Time since last visit: <span id="lastVisit"></span></p>
     </main>
     <footer>
