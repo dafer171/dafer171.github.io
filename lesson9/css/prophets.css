@@ -1,0 +1,47 @@
+header {
+  text-align: center;
+  color: blue;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  background-color: gray;
+}
+
+section h2 {
+  color: blue;
+}
+
+section h3 {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+img {
+  max-width: 98%;
+  height: 175px;
+}
+
+section {
+  text-align: center;
+  background-color: lightblue;
+  border: 1px solid;
+  margin: 2px;
+}
+
+@media only screen and (min-width: 35rem) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
