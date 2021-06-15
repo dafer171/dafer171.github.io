@@ -1,15 +1,15 @@
 header {
   text-align: center;
-  color: blue;
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  color: #4d4d96;
 }
 
 main {
-  background-color: gray;
+  background-color: #dddddd;
 }
 
 section h2 {
-  color: blue;
+  color: #4d4d96;
+  margin: 10px;
 }
 
 section h3 {
@@ -20,16 +20,21 @@ section h3 {
 .cards {
   display: grid;
   grid-template-columns: 1fr;
+  box-shadow: 0 0 20px #333;
+  padding: 10px;
+  margin: 15px;
 }
 
 img {
   max-width: 98%;
   height: 175px;
+  box-shadow: 0 0 20px #333;
+  margin: 10px;
 }
 
 section {
   text-align: center;
-  background-color: lightblue;
+  background-color: #b9b9cc;
   border: 1px solid;
   margin: 2px;
 }
