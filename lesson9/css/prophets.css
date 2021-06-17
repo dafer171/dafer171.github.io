@@ -20,9 +20,8 @@ section h3 {
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  box-shadow: 0 0 20px #333;
+  box-shadow: 0 0 10px 10px rgb(77, 76, 76);
   padding: 10px;
-  margin: 15px;
 }
 
 img {
@@ -37,6 +36,11 @@ section {
   background-color: #b9b9cc;
   border: 1px solid;
   margin: 2px;
+}
+
+footer {
+  margin: 15px;
+  color: #4d4d96;
 }
 
 @media only screen and (min-width: 35rem) {
