@@ -20,7 +20,7 @@ section h3 {
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  box-shadow: 0 0 10px 10px rgb(77, 76, 76);
+  box-shadow: 0 0 20px rgb(77, 76, 76);
   padding: 10px;
 }
 
