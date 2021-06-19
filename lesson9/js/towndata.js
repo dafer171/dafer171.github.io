@@ -10,6 +10,7 @@ fetch(requestURL)
 
     for (let i = 0; i < towns.length; i = i + 2) {
       let card = document.createElement("section");
+      let div = document.createElement("div");
       let h2 = document.createElement("h2");
       let motto = document.createElement("p");
       let yearFounded = document.createElement("h4");
@@ -17,7 +18,9 @@ fetch(requestURL)
       let averageRainfall = document.createElement("h4");
       let photo = document.createElement("img");
 
-      if (i == 4) {continue};
+      if (i == 4) {
+        continue;
+      }
 
       h2.textContent = towns[i].name;
       card.appendChild(h2);
@@ -44,5 +47,4 @@ fetch(requestURL)
 
       document.querySelector("div.cards").appendChild(card);
     }
-    console.table(towns);
   });
