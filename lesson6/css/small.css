@@ -87,14 +87,14 @@ nav a:hover {
   display: block;
 }
 
-img {
-  border-style: inset;
-  max-width: 97%;
-}
-
 #heroContainer {
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 10px auto;
+}
+
+#heroContainer img {
+  width: 100% ;
+  margin: 0 auto;
 }
 
 #weatherContainer {
@@ -155,4 +155,11 @@ figcaption {
   content: "";
   display: table;
   clear: both;
+}
+
+section {
+  text-align: center;
+  background-color: #b9b9cc;
+  border: 1px solid;
+  margin: 15px 5px;
 }

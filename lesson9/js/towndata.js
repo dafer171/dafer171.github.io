@@ -17,6 +17,8 @@ fetch(requestURL)
       let averageRainfall = document.createElement("h4");
       let photo = document.createElement("img");
 
+      if (i == 4) {continue};
+
       h2.textContent = towns[i].name;
       card.appendChild(h2);
 

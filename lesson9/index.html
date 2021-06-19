@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Storm Center</title>
+    <title>Weather and news</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="/lesson6/css/small.css" />
     <link rel="stylesheet" href="/lesson6/css/medium.css" />
     <link rel="stylesheet" href="/lesson6/css/large.css" />
-    <link rel="stylesheet" href="css/storm.css" />
   </head>
   <body>
     <header class="clearfix">
@@ -39,6 +38,22 @@
     </header>
 
     <main class="clearfix">
+      <div id="heroContainer">
+        <picture>
+          <source
+            srcset="images/idaho_400.jpg"
+            media="(min-width:500px) and (max-width:799px)"
+          />
+          <source
+            srcset="images/idaho_600.jpg"
+            media="(min-width:800px)"
+          />
+          <img
+            id="heroImg"
+            src="images/idaho_250.jpg"
+            alt="preston landscape"
+          />
+        </picture>
       <div class="cards"></div>
 
       <p>Time since last visit: <span id="lastVisit"></span></p>
@@ -75,7 +90,6 @@
     </footer>
     <script src="js/lastVisit.js"></script>
     <script src="/lesson6/js/scripts.js"></script>
-    <script src="js/lazyload.js"></script>
     <script src="js/towndata.js"></script>
   </body>
 </html>
