@@ -163,3 +163,8 @@ section {
   border: 1px solid;
   margin: 15px 5px;
 }
+
+section img,
+article img {
+  width: 100%;
+}

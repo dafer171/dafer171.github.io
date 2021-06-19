@@ -61,4 +61,10 @@
   .cards {
     display: flex;
   }
+  section img,
+  article img {
+    width: 50%;
+    float: left;
+    margin: 10px;
+  }
 }
