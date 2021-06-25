@@ -9,8 +9,12 @@ fetch(requestURL)
     const towns = jsonObject["towns"];
 
     for (let i = 0; i < towns.length; i = i + 2) {
-      let card = document.createElement("section");
-      let div = document.createElement("div");
+      let container = document.createElement("div");
+      container.setAttribute("class", "container")
+      let card1 = document.createElement("section");
+      card1.setAttribute("class", "text")
+      let card2 = document.createElement("div");
+      card2.setAttribute("class", "photos")
       let h2 = document.createElement("h2");
       let motto = document.createElement("p");
       let yearFounded = document.createElement("h4");
@@ -22,29 +26,36 @@ fetch(requestURL)
         continue;
       }
 
+      document.querySelector("div.cards").appendChild(container);
+
       h2.textContent = towns[i].name;
-      card.appendChild(h2);
+      card1.appendChild(h2);
 
       motto.textContent = towns[i].motto;
-      card.appendChild(motto);
+      card1.appendChild(motto);
 
       yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
-      card.appendChild(yearFounded);
+      card1.appendChild(yearFounded);
 
       currentPopulation.textContent =
         "Population: " + towns[i].currentPopulation;
-      card.appendChild(currentPopulation);
+      card1.appendChild(currentPopulation);
 
       averageRainfall.textContent =
         "Annual Rain Fall: " + towns[i].averageRainfall;
-      card.appendChild(averageRainfall);
+      card1.appendChild(averageRainfall);
+
+      document.querySelector("div.cards").appendChild(card2);
 
       photo.setAttribute("src", towns[i].photo);
-      card.appendChild(photo);
+      card2.appendChild(photo);
 
       photo.setAttribute("alt", towns[i].name);
-      card.appendChild(photo);
+      card2.appendChild(photo);
 
-      document.querySelector("div.cards").appendChild(card);
+      document.querySelector("div.cards").appendChild(card1);
+
+      container.appendChild(card1);
+      container.appendChild(card2);
     }
   });

@@ -168,6 +168,11 @@ section {
   max-width: 100%;
 }
 
+.pancakes img ,
+.article img {
+  max-width: 100%;
+}
+
 /*
 .cards:nth-child(odd) img {
 	grid-column: 2;
@@ -178,10 +183,6 @@ section {
 	grid-row: 1;
 }
 */
-
-.gallery img{
-  max-width: 100%;
-}
 
 .photos img{
   display: block;
