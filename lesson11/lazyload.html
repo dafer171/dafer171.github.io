@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="css/lazyload.css" />
+  </head>
+
+  <body>
+    <header class="clearfix">
+      <img src="images/iconfinder_icon-59_667368.png" alt="website logo" />
+      <h1>Weather and news on your device</h1>
+      <p>Just the information you need</p>
+
+      <nav>
+        <button class="ham">&#9776;</button>
+        <ul class="navi">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/lesson6/preston-6.html">Preston</a></li>
+          <li class="active"><a href="lazyload.html">Lazy Load</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Lazy Gallery</h1>
+
+    <picture>
+      <img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/clear_day_300_400.jpg"
+        alt="Beautiful landscape shot of mountains and hills under pinkish sky"
+      />
+    </picture>
+
+    <picture
+      ><img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/cloudy_day_300_400.jpg"
+        alt="Beautiful shot of mountains with clear sky in the background"
+      />
+    </picture>
+
+    <picture
+      ><img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/sunny_day_300_400.jpg"
+        alt="Sunny day"
+      />
+    </picture>
+
+    <picture>
+      <img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/perfect_day_300_400.jpg"
+        alt="Perfect day"
+      />
+    </picture>
+
+    <picture>
+      <img
+        src="images/placeholder_300_400.jpg"
+        data-src="images/morning-fog-creeps-with-scraps-over-autumn-mountain-forest-covered-in-gold-leaves.jpg"
+        alt=""
+      />
+    </picture>
+    <script src="/lesson6/js/scripts.js"></script>
+    <script src="js/lazyload.js"></script>
+  </body>
+</html>

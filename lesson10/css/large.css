@@ -54,4 +54,9 @@
     border: solid 1px;
     grid-template-columns: 1fr;
   }
+
+  .forecast{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }

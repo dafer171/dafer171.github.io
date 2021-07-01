@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather and news</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/lesson6/css/small.css" />
+    <link rel="stylesheet" href="/lesson6/css/medium.css" />
+    <link rel="stylesheet" href="/lesson6/css/large.css" />
+  </head>
+  <body>
+    <header class="clearfix">
+      <img
+        src="/lesson7/images/iconfinder_icon-59_667368.png"
+        alt="website logo"
+      />
+      <h1>Weather and news on your device</h1>
+      <p>Just the information you need</p>
+
+      <nav>
+        <button class="ham">&#9776;</button>
+        <ul class="navi">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="/lesson11/preston.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+          <li><a href="/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="clearfix">
+      <div id="heroContainer">
+        <picture>
+          <source
+            srcset="images/idaho_400.jpg"
+            media="(min-width:500px) and (max-width:799px)"
+          />
+          <source srcset="images/idaho_600.jpg" media="(min-width:800px)" />
+          <img
+            id="heroImg"
+            src="images/idaho_250.jpg"
+            alt="preston landscape"
+          />
+        </picture>
+      </div>
+
+      <div class="cards"></div>
+
+      <article>
+        <h3>Article</h3>
+        <picture>
+          <source
+            srcset="images/boise_400.jpg"
+            media="(min-width:500px) and (max-width:799px)"
+          />
+          <source srcset="images/boise_600.jpg" media="(min-width:800px)" />
+          <img src="images/boise_250.jpg" alt="preston landscape" />
+        </picture>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh
+          erat, euismod laoreet luctus nec, accumsan cursus augue. Nulla
+          lobortis, magna eu rhoncus ornare, mi nibh elementum tellus, in
+          fringilla orci odio et dolor. Donec rutrum vitae ex a bibendum. Sed
+          cursus malesuada metus at finibus. Donec velit diam, elementum et
+          sodales quis, auctor quis risus. Cras tincidunt lorem nisi, non
+          vulputate enim euismod ut. Cras mattis facilisis ante, sit amet dictum
+          mauris dictum vel. Vestibulum quis elementum diam. Proin ut libero
+          tempor, convallis ex at, facilisis turpis. Pellentesque vel ultrices
+          ligula. Pellentesque at facilisis massa.
+        </p>
+      </article>
+      <p>Time since last visit: <span id="lastVisit"></span></p>
+    </main>
+    <footer>
+      <div class="contact">
+        <div class="itemContact">
+          <h3>Contact information</h3>
+          <p>Addres: 199-101 W 2nd N St, Preston, ID 83263, EE. UU.</p>
+          <p>Phone: 000-000-000</p>
+          <p>Email: 0000@0000.com</p>
+          <p><a href="/portal.html">Assignment Portal</a></p>
+          <p><a href="home-wireframes.html">Wireframes</a></p>
+
+          <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="/lesson6/images/facebook.png" alt="Facebook icon"
+            /></a>
+            <a href="https://twitter.com/home" target="_blank"
+              ><img src="/lesson6/images/twitter.png" alt="Twitter icon"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="/lesson6/images/instagram.png" alt="Instagram icon"
+            /></a>
+          </div>
+        </div>
+        <img id="mapImg" src="/lesson6/images/map.jpg" alt="" />
+      </div>
+      &copy; <span id="currentYear"></span> | David F. Peña | Ecuador |
+      <a href="https://www.byui.edu/online" target="_blank"
+        >BYUI Online Learning</a
+      >
+
+      <p>Last modified: <span id="LastUpdated"></span></p>
+    </footer>
+    <script src="js/lastVisit.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/towndata.js"></script>
+  </body>
+</html>

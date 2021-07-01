@@ -1,0 +1,92 @@
+html {
+  font-family: "Ubuntu", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  box-shadow: 10px 10px 5px gray;
+  margin: 4em;
+  padding:1em;
+  /*width: 100%;*/
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px 10px;
+}
+
+thead th {
+  background-color: #7fb9c2;
+  font-size: 2rem;
+}
+
+tbody th {
+  background-color: #628ca6;
+  color: white;
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e7ffed;
+}
+
+tfoot tr td {
+  background-color: #7fb9c2;
+}
+
+td:hover {
+  background-color: #628ca6;
+  color: white;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    background-color: white;
+    border-collapse: separate;
+  }
+
+  table thead {
+    overflow: auto;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  tbody th {
+    display: none;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
