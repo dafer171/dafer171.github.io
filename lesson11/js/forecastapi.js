@@ -8,7 +8,7 @@ fetch(foreURL)
     const list = jsObject.list.filter((list) =>
       list.dt_txt.includes("18:00:00")
     );
-    console.log(list);
+    //console.log(list);
 
     for (let i = 0; i < list.length; i++) {
       let d = new Date(list[i].dt_txt);
