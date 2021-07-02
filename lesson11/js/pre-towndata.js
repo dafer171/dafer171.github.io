@@ -21,7 +21,7 @@ fetch(requestURL)
 
       if (i == 6) {
 
-      document.querySelector("div.cards").appendChild(container);
+      document.querySelector("div.events").appendChild(container);
 
       h2.textContent ="Upcoming Events:";
       card1.appendChild(h2);
@@ -35,7 +35,7 @@ fetch(requestURL)
       p3.textContent = towns[i].events[2];
       card1.appendChild(p3);
 
-      document.querySelector("div.cards").appendChild(card1);
+      document.querySelector("div.events").appendChild(card1);
 
       container.appendChild(card1);
     }
