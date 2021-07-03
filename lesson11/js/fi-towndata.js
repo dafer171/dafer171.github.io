@@ -9,7 +9,7 @@ fetch(requestURL)
     const towns = jsonObject["towns"];
     const town = towns[2];
     const events = town.events;
-    console.log(events);
+    //console.log(events);
 
     let container = document.createElement("div");
     container.setAttribute("class", "container");
