@@ -53,7 +53,6 @@
   .container {
     border: solid 1px;
     display: block;
-    grid-template-columns: 1fr;
   }
   .container:nth-of-type(even) section {
     grid-column-start: 1;
