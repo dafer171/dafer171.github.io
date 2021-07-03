@@ -165,11 +165,11 @@ section {
   text-align: center;
   background-color: #e1efe6;
   border: 1px solid;
-  margin: 15px 5px;
 }
 
 .container {
   max-width: 100%;
+  padding: 10px 10px;
 }
 
 .pancakes img,

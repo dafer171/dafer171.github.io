@@ -50,13 +50,29 @@
     grid-auto-flow: column;
   }
 
-  .container{
+  .container {
     border: solid 1px;
+    display: block;
     grid-template-columns: 1fr;
   }
+  .container:nth-of-type(even) section {
+    grid-column-start: 1;
+  }
 
-  .forecast{
+  .container:nth-of-type(even) div {
+    grid-row-start: 2;
+  }
+
+  .forecast {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .container:nth-of-type(even) section {
+    grid-column-start: 2;
+  }
+
+  .container:nth-of-type(even) div {
+    grid-row-start: 1;
   }
 }

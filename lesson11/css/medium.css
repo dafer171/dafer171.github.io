@@ -63,12 +63,20 @@
     grid-template-columns: 1fr;
   }
 
+  .container:nth-of-type(even) section {
+    grid-column-start: 2;
+  }
+
+  .container:nth-of-type(even) div {
+    grid-row-start: 1;
+  }
+
   article img {
     width: 50%;
     float: left;
     margin: 10px;
   }
-  .container{
+  .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
