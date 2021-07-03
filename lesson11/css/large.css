@@ -16,7 +16,7 @@
   }
 
   main {
-    max-width: 760px;
+    max-width: 1000px;
   }
 
   #heroContainer {
@@ -34,6 +34,11 @@
 
   .label {
     text-align: left;
+  }
+
+  #artImag {
+    max-width: 400px;
+    float: right;
   }
 
   .gallery {
