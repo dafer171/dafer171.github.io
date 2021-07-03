@@ -71,6 +71,9 @@
     grid-row-start: 1;
   }
 
+  .article {
+    padding: 10px;
+  }
   article img {
     width: 50%;
     float: left;
