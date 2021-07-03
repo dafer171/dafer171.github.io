@@ -10,16 +10,16 @@ fetch(requestURL)
 
     for (let i = 0; i < towns.length; i = i + 2) {
       let container = document.createElement("div");
-      container.setAttribute("class", "container")
+      container.setAttribute("class", "container");
       let card1 = document.createElement("section");
-      card1.setAttribute("class", "text")
+      card1.setAttribute("class", "text");
       let card2 = document.createElement("div");
-      card2.setAttribute("class", "photos")
+      card2.setAttribute("class", "photos");
       let h2 = document.createElement("h2");
       let motto = document.createElement("p");
-      let yearFounded = document.createElement("h4");
-      let currentPopulation = document.createElement("h4");
-      let averageRainfall = document.createElement("h4");
+      let yearFounded = document.createElement("h3");
+      let currentPopulation = document.createElement("h3");
+      let averageRainfall = document.createElement("h3");
       let photo = document.createElement("img");
 
       if (i == 4) {
