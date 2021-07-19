@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather and news on Preston town</title>
+    <title>Tourism and events in Menorca</title>
     <meta
       name="description"
-      content="Weather forescast and news of Preston, Idaho"
+      content="Weather forescast and news of Menorca, Balearic Islands"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shourtcut icon" href="/final-project/images/favicon.ico">
     <link rel="stylesheet" href="../css/normalize.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
@@ -22,174 +23,99 @@
   <body>
     <header class="clearfix">
       <img src="images/iconfinder_icon-59_667368.png" alt="website logo" />
-      <h1>Weather and news on your device</h1>
-      <p>Just the information you need</p>
+      <h1>Tourism in Menorca</h1>
+      <p>Menorca, the island of calm</p>
 
       <nav>
         <button class="ham">&#9776;</button>
         <ul class="navi">
-          <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="preston.html">Preston</a></li>
-          <li><a href="soda.html">Soda Springs</a></li>
-          <li><a href="fish.html">Fish Haven</a></li>
-          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="mahon.html">Mahón</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="clearfix">
-      <h1>Preston Idaho</h1>
-      <div class="pancakes">
-        <img src="images/pancakes_banner.png" alt="pancakes banner" />
-      </div>
       <div id="heroContainer">
         <picture>
           <source
-            srcset="images/wdd230_image_franklin400.jpg"
+            srcset="images/idaho_400.jpg"
             media="(min-width:500px) and (max-width:799px)"
           />
-          <source
-            srcset="images/wdd230_image_franklin600.jpg"
-            media="(min-width:800px)"
-          />
+          <source srcset="images/idaho_600.jpg" media="(min-width:800px)" />
           <img
             id="heroImg"
-            src="images/wdd230_image_franklin250.jpg"
-            alt="preston landscape"
+            src="images/idaho_250.jpg"
+            alt="Preston Landscape"
           />
         </picture>
-        <section id="weatherContainer">
-          <h2>Weather Sumary</h2>
-          <div class="weatherdetails">
-            <p class="label">Currently:</p>
-            <p class="value"><span id="current"></span></p>
-
-            <p class="label">Current:</p>
-            <p class="value"><span id="current-temp"></span>&deg;F</p>
-
-            <p class="label">High:</p>
-            <p class="value"><span id="temp-max"></span>&deg;F</p>
-
-            <p class="label">Wind Chill:</p>
-            <p class="value"><span id="windChill"></span></p>
-
-            <p class="label">Humidity:</p>
-            <p class="value"><span id="humidity"></span>%</p>
-
-            <p class="label">Wind Speed:</p>
-            <p class="value"><span id="wind"></span> mph</p>
-          </div>
-        </section>
       </div>
 
-      <h2>Five Day Forecast</h2>
-      <div class="forecast">
-        <!--
-        <div class="item">
-          <img src="" alt="" id="icon1" />
-          <p><span id="day1"></span>&deg;F</p>
-        </div>
+      <div class="cards"></div>
 
-        <div class="item">
-          <img src="" alt="" id="icon2" />
-          <p><span id="day2"></span>&deg;F</p>
-        </div>
-
-        <div class="item">
-          <img src="" alt="" id="icon3" />
-          <p><span id="day3"></span>&deg;F</p>
-        </div>
-
-        <div class="item">
-          <img src="" alt="" id="icon4" />
-          <p><span id="day4"></span>&deg;F</p>
-        </div>
-
-        <div class="item">
-          <img src="" alt="" id="icon5" />
-          <p><span id="day5"></span>&deg;F</p>
-        </div>
-        -->
-      </div>
-
-      <div class="article">
-        <h2>Preston, Idaho</h2>
-        <img
-          id="artImag"
-          src="images/beautiful-shot-of-crystal-clear-lake-next-to-snowy-mountain-base-during-sunny-day.jpg"
-          alt="Preston Idaho landscape"
-        />
+      <article>
+        <h3>Idaho</h3>
+        <picture>
+          <source
+            srcset="images/boise_400.jpg"
+            media="(min-width:500px) and (max-width:799px)"
+          />
+          <source srcset="images/boise_600.jpg" media="(min-width:800px)" />
+          <img src="images/boise_250.jpg" alt="Boise Landscape" />
+        </picture>
         <p>
-          Preston is a city in Franklin County, Idaho, United States. The
-          population was 5,204 at the 2010 census. The city is the county seat
-          of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan
-          Statistical Area.
-        </p>
-        <h3>History</h3>
-        <p>
-          The Bear River Massacre occurred in 1863 at a point a few miles
-          northwest of Preston. The Bear River Massacre Site is a National
-          Historic Landmark.
+          Is a state in the Pacific Northwest region of the United States. It
+          borders the state of Montana to the east and northeast, Wyoming to the
+          east, Nevada and Utah to the south, and Washington and Oregon to the
+          west. To the north, it shares a small portion of the Canadian border
+          with the province of British Columbia. With a population of
+          approximately 1.8 million and an area of 83,570 square miles (216,400
+          km2), Idaho is the 14th largest, the 13th least populous and the 7th
+          least densely populated of the 50 U.S. states. The state's capital and
+          largest city is Boise.
         </p>
         <p>
-          In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the
-          northern end of the Cache Valley, stretching across southeastern Idaho
-          and northeastern Utah. They founded a community in that location and
-          named it Worm Creek, but in 1881 changed it to Preston because leaders
-          of the LDS Church in Salt Lake City objected to the name "Worm Creek"
-          being part of any church congregation's name. The name Preston was
-          suggested by a local member to honor William B. Preston, who at the
-          time was president of the LDS Church's Cache Stake.
+          For thousands of years Idaho has been inhabited by Native American
+          peoples. In the early 19th century, Idaho was considered part of the
+          Oregon Country, an area disputed between the United States and the
+          British Empire. It officially became U.S. territory with the signing
+          of the Oregon Treaty of 1846, but a separate Idaho Territory was not
+          organized until 1863, instead being included for periods in Oregon
+          Territory and Washington Territory. Idaho was eventually admitted to
+          the Union on July 3, 1890, becoming the 43rd state.
+        </p>
+        <p>
+          Forming part of the Pacific Northwest (and the associated Cascadia
+          bioregion), Idaho is divided into several distinct geographic and
+          climatic regions. The state's north, the relatively isolated Idaho
+          Panhandle, is closely linked with Eastern Washington with which it
+          shares the Pacific Time Zone—the rest of the state uses the Mountain
+          Time Zone. The state's south includes the Snake River Plain (which has
+          most of the population and agricultural land). The state's southeast
+          incorporates part of the Great Basin. Idaho is quite mountainous, and
+          contains several stretches of the Rocky Mountains. The United States
+          Forest Service holds about 38% of Idaho's land, the highest proportion
+          of any state.
+        </p>
+        <p>
+          Industries significant for the state economy include manufacturing,
+          agriculture, mining, forestry, and tourism. A number of science and
+          technology firms are either headquartered in Idaho or have factories
+          there, and the state also contains the Idaho National Laboratory,
+          which is the country's largest Department of Energy facility. Idaho's
+          agricultural sector supplies many products, but the state is best
+          known for its potato crop, which comprises around one-third of the
+          nationwide yield. The official state nickname is the "Gem State",
+          which references Idaho's natural beauty.
         </p>
 
-        <p>
-          It was not until the 1880s while William C. Parkinson was serving as
-          the bishop of the Preston LDS Ward that a regular townsite was laid
-          out.
-        </p>
-        <h3>Festivities</h3>
-        <p>
-          For several years the city held a "Napoleon Dynamite Festival" in the
-          summer. Many of the featured festival themes related to events
-          occurring during the film. For example: Tetherball Tournament, Tater
-          Tot Eating Contest, Moon Boot Dance, Impersonation, Look-A-Like
-          Contest, Football Throwing Contest and more.
-        </p>
-        <p>
-          In 2004 there was a single day event that drew approximately 300
-          people. Although this was not a large crowd, it did help raise $1,500
-          for the Preston School District Education Foundation. In 2005 an
-          estimated 6,000 people attended the event, but that number dropped to
-          an estimated 400 people in 2006. The 2007 and 2008 event was held
-          along with the 'That Famous Preston Night Rodeo' in Preston.
-        </p>
-        <p>
-          There are no plans for reviving the event. 'That Famous Preston Night
-          Rodeo' is usually held in late July, along with the Franklin County
-          parade. The rodeo's name ('That Famous Preston Night Rodeo') comes
-          from it being the first rodeo held during night time. It includes many
-          events such as bull riding, barrel racing, and other popular events.
-          The Franklin county parade includes floats and advertisements of local
-          businesses. The rodeo and parade remain one of the town's most popular
-          local events and traditions.
-        </p>
-        <p>
-          <a href="https://en.wikipedia.org/wiki/Preston,_Idaho">Wikipedia</a>
-        </p>
-        <p>
-          <a href="https://www.freepik.es/fotos/vintage"
-            >Vintage pic made by wirestock - www.freepik.es</a
-          >
-        </p>
-      </div>
-
-      <div class="events"></div>
-      <p>
-        Weather info thanks to:<a href="https://openweathermap.org/"
-          >Open Weather Map</a
-        >
-      </p>
+        <p><a href="https://en.wikipedia.org/wiki/Idaho">Wikipedia</a></p>
+      </article>
+      <!--<p>Time since last visit: <span id="lastVisit"></span></p>-->
     </main>
     <footer>
       <div class="contact">
@@ -199,6 +125,7 @@
           <p>Phone: 000-000-000</p>
           <p>Email: 0000@0000.com</p>
           <p><a href="/index.html">Assignment Portal</a></p>
+          <p><a href="home-wireframes.html">Wireframes</a></p>
 
           <div class="social">
             <a href="https://www.facebook.com/" target="_blank"
@@ -221,5 +148,7 @@
 
       <p>Last modified: <span id="LastUpdated"></span></p>
     </footer>
+    <script src="js/hammenu.js"></script>
+    <script src="js/towndata.js"></script>
   </body>
 </html>

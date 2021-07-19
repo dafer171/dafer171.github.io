@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather and news on Preston town</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header class="clearfix">
+      <img src="images/iconfinder_icon-59_667368.png" alt="website logo" />
+      <h1>Weather and news on your device</h1>
+      <p>Just the information you need</p>
+
+      <nav>
+        <button class="ham">&#9776;</button>
+        <ul class="navi">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mahon.html">Mahón</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="clearfix">
+      <h1>Weather Gallery</h1>
+
+      <div class="gallery">
+        <picture class="shadow">
+          <img
+            src="images/placeholder_300_400.jpg"
+            data-src="images/clear_day_300_400.jpg"
+            alt="Clear day"
+          />
+          <figcaption>Clear day</figcaption>
+        </picture>
+
+        <picture class="shadow"
+          ><img
+            src="images/placeholder_300_400.jpg"
+            data-src="images/cloudy_day_300_400.jpg"
+            alt="Cloudy day"
+          />
+          <figcaption>Cloudy day</figcaption>
+        </picture>
+
+        <picture class="shadow"
+          ><img
+            src="images/placeholder_300_400.jpg"
+            data-src="images/sunny_day_300_400.jpg"
+            alt="Sunny day"
+          />
+          <figcaption>Sunny day</figcaption>
+        </picture>
+
+        <picture class="shadow"
+          ><img
+            src="images/placeholder_300_400.jpg"
+            data-src="images/snowy_day_300_400.jpg"
+            alt="Snowy day"
+          />
+          <figcaption>Snowy day</figcaption>
+        </picture>
+
+        <picture class="shadow">
+          <img
+            src="images/placeholder_300_400.jpg"
+            data-src="images/perfect_day_300_400.jpg"
+            alt="Perfect day"
+          />
+          <figcaption>Perfect day</figcaption>
+        </picture>
+
+        <picture class="shadow">
+          <img
+            src="images/placeholder_300_400.jpg"
+            data-src="images/tornado_day_300_400.jpg"
+            alt="Tornado day"
+          />
+          <figcaption>Tornado day</figcaption>
+        </picture>
+
+        <picture class="shadow">
+          <img
+            src="images/placeholder_300_400.jpg"
+            data-src="images/rainy_day_300_400.jpg"
+            alt="Rainy day"
+          />
+          <figcaption>Rainy day</figcaption>
+        </picture>
+
+        <picture class="shadow">
+          <img
+            src="images/placeholder_300_400.jpg"
+            data-src="images/stormy_day_300_400.jpg"
+            alt="Stormy day"
+          />
+          <figcaption>Stormy day</figcaption>
+        </picture>
+
+        <picture class="shadow">
+          <img
+            src="images/placeholder_300_400.jpg"
+            data-src="images/foggy_day_300_400.jpg"
+            alt="Foggy day"
+          />
+          <figcaption>Foggy day</figcaption>
+        </picture>
+      </div>
+      <p>Time since last visit: <span id="lastVisit"></span></p>
+    </main>
+    <footer>
+      <div class="contact">
+        <div class="itemContact">
+          <h3>Contact information</h3>
+          <p>Addres: 199-101 W 2nd N St, Preston, ID 83263, EE. UU.</p>
+          <p>Phone: 000-000-000</p>
+          <p>Email: 0000@0000.com</p>
+          <p><a href="/index.html">Assignment Portal</a></p>
+
+          <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="images/facebook.png" alt="Facebook icon"
+            /></a>
+            <a href="https://twitter.com/home" target="_blank"
+              ><img src="images/twitter.png" alt="Twitter icon"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="images/instagram.png" alt="Instagram icon"
+            /></a>
+          </div>
+        </div>
+        <img id="mapImg" src="images/map.jpg" alt="" />
+      </div>
+      &copy; <span id="currentYear"></span> | David F. Peña | Ecuador |
+      <a href="https://www.byui.edu/online" target="_blank"
+        >BYUI Online Learning</a
+      >
+
+      <p>Last modified: <span id="LastUpdated"></span></p>
+    </footer>
+    <script src="js/hammenu.js"></script>
+    <script src="js/lazyload.js"></script>
+  </body>
+</html>
