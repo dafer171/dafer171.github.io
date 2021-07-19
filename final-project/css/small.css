@@ -1,0 +1,186 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-top: 1em;
+}
+
+body {
+  background-color: #aeb7b3;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+header img {
+  height: 80px;
+  float: left;
+}
+
+header h1 {
+  text-align: left;
+}
+
+main {
+  background-color: #efcb68;
+  padding: 5px 25px;
+  margin: 0 auto;
+}
+
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+}
+
+nav {
+  background-color: #e1efe6;
+  line-height: 3em;
+}
+
+.navi {
+  padding: 0;
+  margin: 0;
+}
+
+.navi ul {
+  list-style: none;
+}
+
+.navi li {
+  display: none;
+}
+
+.navi a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav a:link {
+  color: blue;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #efcb68;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.navi a:visited {
+  color: gray;
+}
+
+.responsive li {
+  display: block;
+}
+
+#heroContainer {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 10px auto;
+}
+
+#heroContainer img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#weatherContainer {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  top: 20px;
+  left: 20px;
+  background-color: cornflowerblue;
+}
+
+#forecast {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 10px auto;
+}
+
+.item {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.weatherdetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 0.1em;
+}
+
+footer {
+  background-color: #e1efe6;
+  padding: 5px;
+}
+
+#mapImg {
+  max-width: 98%;
+}
+
+.social {
+  display: none;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.shadow {
+  margin: 10px;
+  border-style: none;
+}
+
+figcaption {
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section {
+  text-align: center;
+  background-color: #e1efe6;
+  border: 1px solid;
+}
+
+.container {
+  max-width: 100%;
+  padding: 10px 10px;
+}
+
+.pancakes img,
+.article img {
+  max-width: 100%;
+  margin: 10px;
+}
+
+.photos img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  margin: 5% auto;
+}

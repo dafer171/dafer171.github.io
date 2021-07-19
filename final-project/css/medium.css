@@ -1,0 +1,86 @@
+@media only screen and (min-width: 32.5em) {
+  .navi {
+    display: flex;
+  }
+  .navi li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navi a {
+    text-align: center;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  .label {
+    text-align: right;
+  }
+
+  #forecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #artImag {
+    max-width: 350px;
+    float: right;
+  }
+
+  .article {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
+  }
+
+  #mapImg {
+    float: left;
+    max-width: 98%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .itemContact {
+    grid-column: 2;
+  }
+
+  .social {
+    display: inline;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container:nth-of-type(even) section {
+    grid-column-start: 2;
+  }
+
+  .container:nth-of-type(even) div {
+    grid-row-start: 1;
+  }
+
+  .article {
+    padding: 10px;
+  }
+  article img {
+    width: 50%;
+    float: left;
+    margin: 10px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
