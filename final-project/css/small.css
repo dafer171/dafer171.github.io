@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   margin-top: 1em;
 }
@@ -183,4 +183,8 @@ section {
   max-width: 100%;
   margin: auto;
   margin: 5% auto;
+}
+
+picture img {
+  max-width: 100%;
 }
