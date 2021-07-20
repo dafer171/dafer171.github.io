@@ -1,7 +1,7 @@
 const requestURL = 
 //"http://127.0.0.1:5500/final-project/json/towndata.json"
 //"https://byui-cit230.github.io/weather/data/towndata.json";
-"https://dafer171.github.io/final-project/final-project/json/towndata.json";
+"https://dafer171.github.io/final-project/json/towndata.json"
 
 fetch(requestURL)
   .then(function (response) {
