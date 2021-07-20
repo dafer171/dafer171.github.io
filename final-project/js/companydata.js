@@ -1,13 +1,14 @@
-const requestURL ="https://dafer171.github.io/final-project/json/companydata.json"
+const requestURL =
+  "https://dafer171.github.io/final-project/json/companydata.json";
 
 fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    const towns = jsonObject["towns"];
+    const company = jsonObject["company"];
 
-    for (let i = 0; i < towns.length; i = i + 2) {
+    for (let i = 0; i < company.length; i = i + 2) {
       let container = document.createElement("div");
       container.setAttribute("class", "container");
       let card1 = document.createElement("section");
@@ -27,29 +28,29 @@ fetch(requestURL)
 
       document.querySelector("div.cards").appendChild(container);
 
-      h2.textContent = towns[i].name;
+      h2.textContent = company[i].name;
       card1.appendChild(h2);
 
-      motto.textContent = towns[i].motto;
+      motto.textContent = company[i].motto;
       card1.appendChild(motto);
 
-      yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
+      yearFounded.textContent = "Year Founded: " + company[i].yearFounded;
       card1.appendChild(yearFounded);
 
       currentPopulation.textContent =
-        "Population: " + towns[i].currentPopulation;
+        "Population: " + company[i].currentPopulation;
       card1.appendChild(currentPopulation);
 
       averageRainfall.textContent =
-        "Annual Rain Fall: " + towns[i].averageRainfall;
+        "Annual Rain Fall: " + company[i].averageRainfall;
       card1.appendChild(averageRainfall);
 
       document.querySelector("div.cards").appendChild(card2);
 
-      photo.setAttribute("src", towns[i].photo);
+      photo.setAttribute("src", company[i].photo);
       card2.appendChild(photo);
 
-      photo.setAttribute("alt", towns[i].name);
+      photo.setAttribute("alt", company[i].name);
       card2.appendChild(photo);
 
       document.querySelector("div.cards").appendChild(card1);
