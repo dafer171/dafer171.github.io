@@ -18,8 +18,8 @@ fetch(requestURL)
       let h2 = document.createElement("h2");
       let motto = document.createElement("p");
       let yearFounded = document.createElement("h3");
-      let currentPopulation = document.createElement("h3");
-      let averageRainfall = document.createElement("h3");
+      let phoneNumber = document.createElement("h3");
+      let web = document.createElement("h3");
       let photo = document.createElement("img");
 
       if (i == 4) {
@@ -37,13 +37,11 @@ fetch(requestURL)
       yearFounded.textContent = "Year Founded: " + company[i].yearFounded;
       card1.appendChild(yearFounded);
 
-      currentPopulation.textContent =
-        "Population: " + company[i].currentPopulation;
-      card1.appendChild(currentPopulation);
+      phoneNumber.textContent = "Phone number: " + company[i].phoneNumber;
+      card1.appendChild(phoneNumber);
 
-      averageRainfall.textContent =
-        "Annual Rain Fall: " + company[i].averageRainfall;
-      card1.appendChild(averageRainfall);
+      web.textContent = "Web site: " + company[i].web;
+      card1.appendChild(web);
 
       document.querySelector("div.cards").appendChild(card2);
 
