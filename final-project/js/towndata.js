@@ -1,4 +1,4 @@
-const requestURL = "http://127.0.0.1:5500/final-project/json/towndata.jsons";
+const requestURL = "https://github.com/dafer171/dafer171.github.io/blob/master/final-project/json/towndata.json";
 
 fetch(requestURL)
   .then(function (response) {
