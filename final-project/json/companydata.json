@@ -28,7 +28,7 @@
         "name": "Port de Maó",
         "photo": "port.jpg",
         "motto": "A Port Thinking of You",
-        "phoneNumber": "+34971363066",
+        "phoneNumber": "+34 971 36 30 66",
         "web": "https://portdemao.es/",
         "events": [
           "July 29: Night market and music in the port",
@@ -49,39 +49,39 @@
         ]
       },
       {
-        "name": "",
-        "photo": "",
-        "motto": "",
-        "phoneNumber": "",
-        "web": "",
+        "name": "Ajuntament de Ciutadella",
+        "photo": "ciutadella.jpg",
+        "motto": "Enjoy Ciutadella",
+        "phoneNumber": "+34 971 38 10 50",
+        "web": "http://www.ajciutadella.org/",
         "events": [
-          "",
-          "",
-          ""
+          "July 29: Nocturnal tour in Pont d'en Gil: stairs, sea and rocks ",
+          "July 30: Creative tour, enjoy curiosities and crafts of Ciutadella",
+          "July 31: Past and present of Cala Morell, the north of Ciutadella"
         ]
       },
       {
-        "name": "",
-        "photo": "",
-        "motto": "",
-        "phoneNumber": "",
-        "web": "",
+        "name": "Civitatis",
+        "photo": "civitatis.jpg",
+        "motto": "Pure life Menorca",
+        "phoneNumber": "+34 696 950 323",
+        "web": "https://www.civitatis.com/",
         "events": [
-          "",
-          "",
-          ""
+          "August 2: Boat trip through the southern coves from Ciudadela",
+          "August 3: Boat trip through the southern coves from Cala Galdana",
+          "August 4: Kayak excursion with snorkel from Fornells"
         ]
       },
       {
-        "name": "",
-        "photo": "",
-        "motto": "",
-        "phoneNumber": "",
-        "web": "",
+        "name": "Ajuntament de Ferrerias",
+        "photo": "ferrerias.jpg",
+        "motto": "Ferreries is here",
+        "phoneNumber": "+34  971 37 30 03",
+        "web": "http://www.ajferreries.org/",
         "events": [
-          "",
-          "",
-          ""
+          "July 23: Tradicional games",
+          "July 30: Circus skils workshop",
+          "August 6: Exhibition of antique post-cards"
         ]
       }
     ]
