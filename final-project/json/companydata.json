@@ -4,7 +4,6 @@
         "name": "Consortium of the military museum of Menorca",
         "photo": "consortium.jpg",
         "motto": "Consortium dedicated to the conservation and dissemination of the military historical heritage of Menorca",
-        "yearFounded": "1949",
         "phoneNumber": "+34 971 355 760",
         "web": "https://www.consorciomilitarmenorca.com/",
         "events": [
@@ -14,23 +13,21 @@
         ]
       },
       {
-        "name": "S’Algar Diving Menorca",
-        "photo": "",
-        "motto": "S’Algar Diving Menorca | Diving & Snorkelling in the Marine Reserve | Isla del Aire",
-        "yearFounded": "1990",
-        "phoneNumber": "+34 971 15 06 01",
-        "web": "https://salgardiving.com/",
+        "name": "Es Claustre",
+        "photo": "claustre.jpg",
+        "motto": "Terrassa Concerts Menorca",
+        "phoneNumber": "+34 871 53 73 93",
+        "web": "https://www.esclaustre.com/",
         "events": [
-          "",
-          "",
-          ""
+          "July 25: Raquel Lúa",
+          "August 5: Beth",
+          "August 7: Rodrigo Laviña"
         ]
       },
       {
         "name": "Port de Maó",
-        "photo": "",
+        "photo": "port.jpg",
         "motto": "A Port Thinking of You",
-        "yearFounded": "1802",
         "phoneNumber": "+34971363066",
         "web": "https://portdemao.es/",
         "events": [
@@ -43,7 +40,6 @@
         "name": "",
         "photo": "",
         "motto": "",
-        "yearFounded": "",
         "phoneNumber": "",
         "web": "",
         "events": [
@@ -56,7 +52,6 @@
         "name": "",
         "photo": "",
         "motto": "",
-        "yearFounded": "",
         "phoneNumber": "",
         "web": "",
         "events": [
@@ -69,7 +64,6 @@
         "name": "",
         "photo": "",
         "motto": "",
-        "yearFounded": "",
         "phoneNumber": "",
         "web": "",
         "events": [
@@ -82,7 +76,6 @@
         "name": "",
         "photo": "",
         "motto": "",
-        "yearFounded": "",
         "phoneNumber": "",
         "web": "",
         "events": [
