@@ -3,7 +3,7 @@ const foreURL =
 fetch(foreURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
+    console.log(jsObject);
     const dayofWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const list = jsObject.list.filter((list) =>
       list.dt_txt.includes("18:00:00")

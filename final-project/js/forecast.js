@@ -1,26 +1,37 @@
 const foreURL =
-  "https://api.openweathermap.org/data/2.5/forecast?id=2514301&appid=33033af6ab98d426efd2c19223b9729c&units=imperial";
+  "https://api.openweathermap.org/data/2.5/onecall?lat=39.8885&lon=4.2658&exclude={part}&appid=33033af6ab98d426efd2c19223b9729c&units=imperial";
+
 fetch(foreURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
-    const dayofWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    const list = jsObject.list.filter((list) =>
-      list.dt_txt.includes("18:00:00")
-    );
-    //console.log(list);
+    document.getElementById("current").textContent =
+      jsObject.current.weather[0].description;
+    document.getElementById("current-temp").textContent = jsObject.current.temp;
+    document.getElementById("humidity").textContent = jsObject.current.humidity;
+  });
 
-    for (let i = 0; i < list.length; i++) {
-      let d = new Date(list[i].dt_txt);
+fetch(foreURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    const dayofWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const list = jsObject.daily; //filter((list) =>
+    //list.dt_txt.includes("18:00:00")
+    //);
+    console.log(list);
+
+    for (let i = 0; i < 3; i++) {
+      let timestamp = list[i].dt;
+      let date = new Date(timestamp * 1000);
+      //let days = date.getDays();
       let card = document.createElement("section");
       let h2 = document.createElement("h2");
       let h3 = document.createElement("h3");
       let image = document.createElement("img");
 
-      h2.textContent = dayofWeek[d.getDay()];
+      h2.textContent = dayofWeek[date.getDay()];
       card.appendChild(h2);
 
-      h3.textContent = list[i].main.temp.toFixed(0);
+      h3.textContent = list[i].temp.day;
       card.appendChild(h3);
 
       image.setAttribute(

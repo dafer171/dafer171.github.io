@@ -42,6 +42,19 @@
     </header>
 
     <main class="clearfix">
+      <section id="weatherContainer">
+        <h2>Weather Sumary</h2>
+        <div class="weatherdetails">
+          <p class="label">Currently:</p>
+          <p class="value"><span id="current"></span></p>
+
+          <p class="label">Current:</p>
+          <p class="value"><span id="current-temp"></span>&deg;F</p>
+
+          <p class="label">Humidity:</p>
+          <p class="value"><span id="humidity"></span>%</p>
+        </div>
+      </section>
       <div id="heroContainer">
         <picture>
           <source
@@ -59,58 +72,54 @@
 
       <div class="cards"></div>
 
-      <article>
-        <h3>Menorca</h3>
-        <picture>
-          <source
-            srcset="images/cala_400.jpg"
-            media="(min-width:500px) and (max-width:799px)"
-          />
-          <source srcset="images/cala_600.jpg" media="(min-width:800px)" />
-          <img src="images/cala_250.jpg" alt="Boise Landscape" />
-        </picture>
-        <h3>Forecast</h3>
-        <div class="forecast"></div>
-        <div class="purpose">
-          <h3>Site Purpose</h3>
-          <p>This website has the following objectives:</p>
-          <ul>
-            <li>
-              <p>
-                Establish relationships between all providers of tourist
-                activities.
-              </p>
-            </li>
-            <li>
-              <p>
-                Collect events and activities offered by tourism activity
-                providers.
-              </p>
-            </li>
-            <li>
-              <p>
-                Create a place where all those activities and events can be
-                displayed.
-              </p>
-            </li>
-            <li>
-              <p>
-                Organize information and display it in a way that makes it easy to
-                attend activities that people find interesting.
-              </p>
-            </li>
-            <li><p>Allow citizens to report on upcoming events</p></li>
-          </ul>
-        
-      </article>
+      <h3>Menorca</h3>
+      <picture>
+        <source
+          srcset="images/cala_400.jpg"
+          media="(min-width:500px) and (max-width:799px)"
+        />
+        <source srcset="images/cala_600.jpg" media="(min-width:800px)" />
+        <img src="images/cala_250.jpg" alt="Boise Landscape" />
+      </picture>
+      <h3>Forecast</h3>
+      <div class="forecast"></div>
+      <div class="purpose">
+        <h3>Site Purpose</h3>
+        <p>This website has the following objectives:</p>
+        <ul>
+          <li>
+            <p>
+              Establish relationships between all providers of tourist
+              activities.
+            </p>
+          </li>
+          <li>
+            <p>
+              Collect events and activities offered by tourism activity
+              providers.
+            </p>
+          </li>
+          <li>
+            <p>
+              Create a place where all those activities and events can be
+              displayed.
+            </p>
+          </li>
+          <li>
+            <p>
+              Organize information and display it in a way that makes it easy to
+              attend activities that people find interesting.
+            </p>
+          </li>
+          <li><p>Allow citizens to report on upcoming events</p></li>
+        </ul>
 
-      <div class="events"></div>
-      <p>
-        Weather info thanks to:<a href="https://openweathermap.org/"
-          >Open Weather Map</a
-        >
-      </p>
-      
+        <div class="events"></div>
+        <p>
+          Weather info thanks to:<a href="https://openweathermap.org/"
+            >Open Weather Map</a
+          >
+        </p>
       </div>
     </main>
 
