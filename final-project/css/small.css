@@ -10,7 +10,7 @@ h6 {
 }
 
 body {
-  background-color: #aeb7b3;
+  background-color: #1c7c54;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   padding: 5px 25px;
   font-size: 18px;
@@ -28,7 +28,7 @@ header h1 {
 }
 
 main {
-  background-color: #efcb68;
+  background-color: #fffbfe;
   padding: 5px 25px;
   margin: 0 auto;
 }
@@ -41,7 +41,7 @@ nav button {
 }
 
 nav {
-  background-color: #e1efe6;
+  background-color: #ba7ba1;
   line-height: 3em;
 }
 
@@ -80,7 +80,7 @@ nav a:hover {
 }
 
 .navi a:visited {
-  color: gray;
+  color: white;
 }
 
 .responsive li {
@@ -123,7 +123,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #e1efe6;
+  background-color: #ba7ba1;
   padding: 5px;
 }
 
@@ -155,6 +155,10 @@ figcaption {
   padding: 5px;
 }
 
+.clearfix {
+  background-color: white;
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -163,8 +167,9 @@ figcaption {
 
 section {
   text-align: center;
-  background-color: #e1efe6;
+  background-color: #ba7ba1;
   border: 1px solid;
+  color: white;
 }
 
 .container {
