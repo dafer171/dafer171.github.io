@@ -1,14 +1,10 @@
-const requestURL = 
-//"http://127.0.0.1:5500/final-project/json/towndata.json"
-//"https://byui-cit230.github.io/weather/data/towndata.json";
-"https://dafer171.github.io/final-project/json/towndata.json"
+const requestURL ="https://dafer171.github.io/final-project/json/companydata.json"
 
 fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    //console.table(jsonObject); // temporary checking for valid response and data parsing
     const towns = jsonObject["towns"];
 
     for (let i = 0; i < towns.length; i = i + 2) {
