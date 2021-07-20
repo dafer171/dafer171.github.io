@@ -17,7 +17,6 @@ fetch(requestURL)
       card2.setAttribute("class", "photos");
       let h2 = document.createElement("h2");
       let motto = document.createElement("p");
-      let yearFounded = document.createElement("h3");
       let phoneNumber = document.createElement("h3");
       let web = document.createElement("h3");
       let photo = document.createElement("img");
@@ -33,9 +32,6 @@ fetch(requestURL)
 
       motto.textContent = company[i].motto;
       card1.appendChild(motto);
-
-      yearFounded.textContent = "Year Founded: " + company[i].yearFounded;
-      card1.appendChild(yearFounded);
 
       phoneNumber.textContent = "Phone number: " + company[i].phoneNumber;
       card1.appendChild(phoneNumber);
