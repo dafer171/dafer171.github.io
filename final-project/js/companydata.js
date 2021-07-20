@@ -53,3 +53,35 @@ fetch(requestURL)
       container.appendChild(card2);
     }
   });
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const company = jsonObject["company"];
+    const ferrerias = company[6];
+    const events = ferrerias.events;
+    //console.log(events);
+
+    let container = document.createElement("div");
+    container.setAttribute("class", "container");
+    let card1 = document.createElement("section");
+    card1.setAttribute("class", "text");
+    let h2 = document.createElement("h2");
+    h2.textContent = "Upcoming Events:";
+    card1.appendChild(h2);
+
+    for (let i = 0; i < events.length; i++) {
+      let p1 = document.createElement("p");
+
+      document.querySelector("div.events").appendChild(container);
+
+      p1.textContent = ferrerias.events[i];
+      card1.appendChild(p1);
+
+      document.querySelector("div.events").appendChild(card1);
+
+      container.appendChild(card1);
+    }
+  });

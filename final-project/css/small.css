@@ -193,3 +193,7 @@ section {
 picture img {
   max-width: 100%;
 }
+
+.purpose {
+  border: 2px solid #ba7ba1;
+}
