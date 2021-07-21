@@ -65,7 +65,7 @@ fetch(requestURL)
     //console.log(events);
 
     let container = document.createElement("div");
-    container.setAttribute("class", "container");
+    container.setAttribute("class", "even_container");
     let card1 = document.createElement("section");
     card1.setAttribute("class", "text");
     let h2 = document.createElement("h2");

@@ -9,48 +9,46 @@ fetch(requestURL)
     const company = jsonObject["company"];
     //console.log(company)
     for (let i = 0; i < company.length; i = i + 2) {
+      if (i == 2) {
+        let container = document.createElement("div");
+        container.setAttribute("class", "even_container");
+        let card1 = document.createElement("section");
+        card1.setAttribute("class", "text");
+        let card2 = document.createElement("div");
+        card2.setAttribute("class", "photos");
+        let h2 = document.createElement("h2");
+        let motto = document.createElement("p");
+        let phoneNumber = document.createElement("h3");
+        let web = document.createElement("h3");
+        let photo = document.createElement("img");
 
-        if (i==2){
-            let container = document.createElement("div");
-      container.setAttribute("class", "container");
-      let card1 = document.createElement("section");
-      card1.setAttribute("class", "text");
-      let card2 = document.createElement("div");
-      card2.setAttribute("class", "photos");
-      let h2 = document.createElement("h2");
-      let motto = document.createElement("p");
-      let phoneNumber = document.createElement("h3");
-      let web = document.createElement("h3");
-      let photo = document.createElement("img");
+        document.querySelector("div.cards").appendChild(container);
 
-      document.querySelector("div.cards").appendChild(container);
+        h2.textContent = company[i].name;
+        card1.appendChild(h2);
 
-      h2.textContent = company[i].name;
-      card1.appendChild(h2);
+        motto.textContent = company[i].motto;
+        card1.appendChild(motto);
 
-      motto.textContent = company[i].motto;
-      card1.appendChild(motto);
+        phoneNumber.textContent = "Phone number: " + company[i].phoneNumber;
+        card1.appendChild(phoneNumber);
 
-      phoneNumber.textContent = "Phone number: " + company[i].phoneNumber;
-      card1.appendChild(phoneNumber);
+        web.textContent = "Web site: " + company[i].web;
+        card1.appendChild(web);
 
-      web.textContent = "Web site: " + company[i].web;
-      card1.appendChild(web);
+        document.querySelector("div.cards").appendChild(card2);
 
-      document.querySelector("div.cards").appendChild(card2);
+        photo.setAttribute("src", company[i].photo);
+        card2.appendChild(photo);
 
-      photo.setAttribute("src", company[i].photo);
-      card2.appendChild(photo);
+        photo.setAttribute("alt", company[i].name);
+        card2.appendChild(photo);
 
-      photo.setAttribute("alt", company[i].name);
-      card2.appendChild(photo);
+        document.querySelector("div.cards").appendChild(card1);
 
-      document.querySelector("div.cards").appendChild(card1);
-
-      container.appendChild(card1);
-      container.appendChild(card2);
-        }
-      
+        container.appendChild(card1);
+        container.appendChild(card2);
+      }
     }
   });
 
@@ -65,7 +63,7 @@ fetch(requestURL)
     //console.log(events);
 
     let container = document.createElement("div");
-    container.setAttribute("class", "container");
+    container.setAttribute("class", "event_container");
     let card1 = document.createElement("section");
     card1.setAttribute("class", "text");
     let h2 = document.createElement("h2");
