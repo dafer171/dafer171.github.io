@@ -17,7 +17,7 @@ fetch(foreURL)
     const list = jsObject.daily;
     //console.log(list);
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 3; i++) {
       let timestamp = list[i].dt;
       let date = new Date(timestamp * 1000);
       let card = document.createElement("section");

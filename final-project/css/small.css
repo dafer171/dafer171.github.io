@@ -23,8 +23,17 @@ header img {
   float: left;
 }
 
+.article img {
+  max-width: 100%;
+  margin: 10px;
+}
+
 header h1 {
   text-align: left;
+}
+
+.text {
+  max-width: 100%;
 }
 
 main {
@@ -177,12 +186,6 @@ section {
   padding: 10px 10px;
 }
 
-.pancakes img,
-.article img {
-  max-width: 100%;
-  margin: 10px;
-}
-
 .photos img {
   display: block;
   max-width: 100%;
@@ -216,4 +219,24 @@ picture img {
 
 iframe {
   max-width: 100%;
+}
+
+fieldset {
+  margin-bottom: 10%;
+}
+.top input {
+  height: 44px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.top input:required {
+  background-color: var(--accent-color);
+  color: #ba7ba1;
+}
+
+#benefits {
+  border: 2px solid #ba1ba7;
+  border-radius: 5px;
+  margin-bottom: 10%;
 }

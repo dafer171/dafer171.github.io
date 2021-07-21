@@ -21,7 +21,7 @@ fetch(requestURL)
       let web = document.createElement("h3");
       let photo = document.createElement("img");
 
-      document.querySelector("div.cards").appendChild(container);
+      document.querySelector("div.directory").appendChild(container);
 
       h2.textContent = company[i].name;
       card1.appendChild(h2);
@@ -35,7 +35,7 @@ fetch(requestURL)
       web.textContent = "Web site: " + company[i].web;
       card1.appendChild(web);
 
-      document.querySelector("div.cards").appendChild(card2);
+      document.querySelector("div.directory").appendChild(card2);
 
       photo.setAttribute("src", company[i].photo);
       card2.appendChild(photo);
@@ -43,7 +43,7 @@ fetch(requestURL)
       photo.setAttribute("alt", company[i].name);
       card2.appendChild(photo);
 
-      document.querySelector("div.cards").appendChild(card1);
+      document.querySelector("div.directory").appendChild(card1);
 
       container.appendChild(card1);
       container.appendChild(card2);

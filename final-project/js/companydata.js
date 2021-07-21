@@ -21,6 +21,10 @@ fetch(requestURL)
       let web = document.createElement("h3");
       let photo = document.createElement("img");
 
+      if (i == 4) {
+        continue;
+      }
+
       document.querySelector("div.cards").appendChild(container);
 
       h2.textContent = company[i].name;
