@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <meta
-      name="description"
-      content="Contact, Menorca chamber of commerce"
-    />
-    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="Contact, Menorca chamber of commerce" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
     <header class="clearfix">
-        <img src="images/web_logo.jpg" alt="website logo" />
-        <h1>Tourism in Menorca</h1>
-        <p>Menorca, the island of calm</p>
+      <img src="images/web_logo.jpg" alt="website logo" />
+      <h1>Tourism in Menorca</h1>
+      <p>Menorca, the island of calm</p>
 
       <nav>
         <button class="ham">&#9776;</button>
@@ -38,123 +38,106 @@
     </header>
 
     <main class="clearfix">
-      <h1>Strom Center</h1>
+      <h1>Contact information</h1>
+      <p>Address: Plaça de la Constitució, 1, 07701 Maó, Illes Balears</p>
+      <p>Phone: 000-000-000</p>
+      <p>Email: 0000@gmail.com</p>
+
+      <h2>Follow us on our social media</h2>
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img src="images/facebook.png" alt="Facebook icon"
+      /></a>
+      <a href="https://twitter.com/home" target="_blank"
+        ><img src="images/twitter.png" alt="Twitter icon"
+      /></a>
+      <a href="https://www.instagram.com/" target="_blank"
+        ><img src="images/instagram.png" alt="Instagram icon"
+      /></a>
+
       <form method="GET" action="thanks.html">
         <fieldset>
-          <legend>Personal Information</legend>
+          <legend>Contact Us!</legend>
+
           <label class="top"
-            >Full name*<input type="text" name="fname" required
+            >First name*<input type="text" name="fname" required
           /></label>
-          <label class="top">
-            Email<input
+
+          <label class="top"
+            >Last name*<input type="text" name="lname" required
+          /></label>
+
+          <label class="top">Title<input type="text" name="title" /></label>
+
+          <label class="top" required>
+            Email*<input
               type="email"
               name="email"
               placeholder="someone@gmail.com"
           /></label>
-          <label class="top">
-            Phone*<input type="tel" name="phone" required
-          /></label>
-          <label class="top">
-            Zip code<input type="number" name="zip" required
-          /></label>
-        </fieldset>
 
-        <fieldset>
-          <legend>Storm Information</legend>
           <label class="top">
-            Storm Date<input type="date" name="Sdate"
+            Cell Phone<input type="tel" name="phone"
           /></label>
 
           <label class="top">
-            Storm Type<input list="stormType" name="Stype"
-          /></label>
-          <datalist id="stormType">
-            <option value="Flash Flood"></option>
-            <option value="Hail"></option>
-            <option value="Hurricane"></option>
-            <option value="Thunderstorm"></option>
-            <option value="Tornado"></option>
-          </datalist>
-
-          <label class="top">
-            Storm Severity<input list="severity" name="SSeverity"
-          /></label>
-          <datalist id="severity">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-            <option value="6"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-            <option value="9"></option>
-            <option value="10"></option>
-          </datalist>
-
-          <label class="top"
-            >Storm Region
-            <select name="subject">
-              <option value="">Select Region</option>
-              <option value="fishHaven">Fish Haven</option>
-              <option value="preston">Preston</option>
-              <option value="sodaSprings">Soda Springs</option>
-            </select>
+            Comments
+            <input type="textarea" name="comments" />
           </label>
-
-          <div>User in-danger level</div>
-          <label class="sbs"
-            ><input type="radio" name="danger" value="yes" />Yes</label
-          >
-          <label class="sbs"
-            ><input type="radio" name="danger" value="maybe" />Maybe</label
-          >
-          <label class="sbs"
-            ><input type="radio" name="danger" value="no" />No</label
-          >
         </fieldset>
 
-        <fieldset>
-          <legend>Aditional Information</legend>
-          <label class="top"
-            >Information<input type="textarea" name="information"
-          /></label>
-        </fieldset>
-
-        <input type="submit" value="Report Storm" class="submitBtn" />
+        <input type="submit" value="Contact us!" class="submitBtn" />
       </form>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.768184849968!2d4.287959114876886!3d39.87943019606575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12958714a3011dad%3A0x7d39aeb18d476563!2sMuseo%20Militar%20de%20Menorca!5e0!3m2!1ses!2ses!4v1626878302100!5m2!1ses!2ses"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <h3>Board of Directors</h3>
+      <h4>Chairman</h4>
+      <p>David Peña</p>
+      <h4>CEO</h4>
+      <p>Azahara Soler</p>
+      <h4>Vice Chairman</h4>
+      <p>Jose Andrade</p>
+      <h4>Directors</h4>
+      <p>Aurora Catalá: Independent Non-Executive</p>
+      <p>Rene Dominguez:External Propietary Director</p>
 
       <p>Time since last visit: <span id="lastVisit"></span></p>
     </main>
     <footer>
-        <div class="contact">
-          <div class="itemContact">
-            <h3>Contact information</h3>
-            <p>Address: Plaça de la Constitució, 1, 07701 Maó, Illes Balears</p>
-            <p>Phone: 000-000-000</p>
-            <p>Email: 0000@gmail.com</p>
-  
-            <div class="social">
-              <a href="https://www.facebook.com/" target="_blank"
-                ><img src="images/facebook.png" alt="Facebook icon"
-              /></a>
-              <a href="https://twitter.com/home" target="_blank"
-                ><img src="images/twitter.png" alt="Twitter icon"
-              /></a>
-              <a href="https://www.instagram.com/" target="_blank"
-                ><img src="images/instagram.png" alt="Instagram icon"
-              /></a>
-            </div>
+      <div class="contact">
+        <div class="itemContact">
+          <h3>Contact information</h3>
+          <p>Address: Plaça de la Constitució, 1, 07701 Maó, Illes Balears</p>
+          <p>Phone: 000-000-000</p>
+          <p>Email: 0000@gmail.com</p>
+
+          <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="images/facebook.png" alt="Facebook icon"
+            /></a>
+            <a href="https://twitter.com/home" target="_blank"
+              ><img src="images/twitter.png" alt="Twitter icon"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="images/instagram.png" alt="Instagram icon"
+            /></a>
           </div>
-          <img id="mapImg" src="images/map.jpg" alt="Contact Map" />
         </div>
-        &copy; <span id="currentYear"></span> | David F. Peña | Ecuador |
-        <a href="https://www.byui.edu/online" target="_blank"
-          >BYUI Online Learning</a
-        >
-  
-        <p>Last modified: <span id="LastUpdated"></span></p>
-      </footer>
-      <script src="js/hammenu.js"></script>
-    </body>
-  </html>
+        <img id="mapImg" src="images/map.jpg" alt="Contact Map" />
+      </div>
+      &copy; <span id="currentYear"></span> | David F. Peña | Ecuador |
+      <a href="https://www.byui.edu/online" target="_blank"
+        >BYUI Online Learning</a
+      >
+
+      <p>Last modified: <span id="LastUpdated"></span></p>
+    </footer>
+    <script src="js/hammenu.js"></script>
+  </body>
+</html>
