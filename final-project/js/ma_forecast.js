@@ -15,8 +15,9 @@ fetch(foreURL)
   .then((jsObject) => {
     const dayofWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const list = jsObject.daily;
+    //console.log(list);
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 6; i++) {
       let timestamp = list[i].dt;
       let date = new Date(timestamp * 1000);
       let card = document.createElement("section");

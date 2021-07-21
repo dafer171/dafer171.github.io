@@ -7,9 +7,11 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const company = jsonObject["company"];
-
+    //console.log(company)
     for (let i = 0; i < company.length; i = i + 2) {
-      let container = document.createElement("div");
+
+        if (i==2){
+            let container = document.createElement("div");
       container.setAttribute("class", "container");
       let card1 = document.createElement("section");
       card1.setAttribute("class", "text");
@@ -47,6 +49,8 @@ fetch(requestURL)
 
       container.appendChild(card1);
       container.appendChild(card2);
+        }
+      
     }
   });
 
@@ -56,8 +60,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const company = jsonObject["company"];
-    const ferrerias = company[6];
-    const events = ferrerias.events;
+    const mahon = company[2];
+    const events = mahon.events;
     //console.log(events);
 
     let container = document.createElement("div");
@@ -73,7 +77,7 @@ fetch(requestURL)
 
       document.querySelector("div.events").appendChild(container);
 
-      p1.textContent = ferrerias.events[i];
+      p1.textContent = mahon.events[i];
       card1.appendChild(p1);
 
       document.querySelector("div.events").appendChild(card1);
