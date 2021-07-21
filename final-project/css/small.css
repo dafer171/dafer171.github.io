@@ -235,8 +235,19 @@ fieldset {
   color: #ba7ba1;
 }
 
-#benefits {
+.benefits {
   border: 2px solid #ba1ba7;
   border-radius: 5px;
+  margin-bottom: 10%;
+}
+
+.benefits li {
+  list-style: none;
+}
+
+input.submitBtn {
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
   margin-bottom: 10%;
 }
